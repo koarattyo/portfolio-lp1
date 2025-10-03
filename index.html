@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- メタ情報 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO関連 -->
+    <meta name="description" content="TechSolutions - 最先端のITソリューションで企業のDXを支援">
+    <meta name="keywords" content="IT, DX, Web開発, システム開発, クラウド, インフラ">
+    <meta name="author" content="TechSolutions">
+
+    <!-- OpenGraph（ソーシャルメディア用） -->
+    <meta property="og:title" content="TechSolutions | ITソリューション企業">
+    <meta property="og:description" content="最先端のITソリューションで企業のDXを支援">
+    <meta property="og:type" content="website">
+
+    <!-- ページタイトル -->
+    <title>TechSolutions | ITソリューション企業</title>
+
+    <!-- 外部リソース -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+
+<body>
+    <!-- ==========================================
+         ヘッダーセクション
+         - 固定ナビゲーション
+         - ブランドロゴ
+         - メニュー項目
+         - ハンバーガーメニュー（モバイル用）
+    ========================================== -->
+    <header class="header">
+        <nav class="navigation">
+            <!-- ブランド情報 -->
+            <div class="navigation__brand">
+                <h1 class="navigation__logo">TechSolutions</h1>
+            </div>
+
+            <!-- ナビゲーションメニュー -->
+            <div class="navigation__menu" id="navigation-menu">
+                <a href="#services" class="navigation__link">サービス</a>
+                <a href="#about" class="navigation__link">会社概要</a>
+                <a href="#results" class="navigation__link">実績</a>
+                <a href="#contact" class="navigation__link">お問い合わせ</a>
+            </div>
+
+            <!-- モバイルメニューボタン -->
+            <button class="navigation__toggle" id="navigation-toggle" aria-label="メニューを開く">
+                <span class="navigation__toggle-line"></span>
+                <span class="navigation__toggle-line"></span>
+                <span class="navigation__toggle-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ==========================================
+         メインコンテンツエリア
+    ========================================== -->
+    <main class="main-content">
+        <!-- ==========================================
+             ヒーローセクション（メインビジュアル）
+             - 背景画像
+             - オーバーレイ
+             - メインメッセージ
+             - CTAボタン
+        ========================================== -->
+        <section class="hero-section" id="hero">
+            <!-- 背景画像レイヤー -->
+            <div class="hero-section__background"></div>
+
+            <!-- 半透明オーバーレイ（文字の可読性向上） -->
+            <div class="hero-section__overlay"></div>
+
+            <!-- メインコンテンツ -->
+            <div class="hero-section__content">
+                <h2 class="hero-section__title">
+                    企業のDXを<br>
+                    <span class="hero-section__title-highlight">次のレベル</span>へ
+                </h2>
+
+                <p class="hero-section__description">
+                    最先端のITソリューションで、あなたのビジネスを革新します。<br>
+                    効率化から売上向上まで、包括的にサポートいたします。
+                </p>
+
+                <!-- CTAボタンエリア -->
+                <div class="hero-section__cta">
+                    <a href="#contact" class="button button--primary">無料相談する</a>
+                    <a href="#services" class="button button--secondary">サービス詳細</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             お悩み・解決セクション
+             - 企業の課題と解決策
+             - TechSolutionsの強み
+        ========================================== -->
+        <section class="trouble-solution-section">
+            <div class="container">
+                <div class="trouble-solution-section__content">
+                    <div class="trouble-solution-section__text">
+                        <h2 class="trouble-solution-section__title">こんなお悩みありませんか？</h2>
+                        <ul class="trouble-solution-section__problems">
+                            <li>業務効率が悪く時間がかかる…</li>
+                            <li>システムが古くメンテナンスコストが高い…</li>
+                            <li>DX推進が進まず何から始めればいいかわからない…</li>
+                        </ul>
+                        <div class="trouble-solution-section__arrow">↓</div>
+                        <h3 class="trouble-solution-section__solution-title">TechSolutionsが解決します</h3>
+                        <ul class="trouble-solution-section__strengths">
+                            <li>豊富な実績（300社以上）</li>
+                            <li>最新技術の活用</li>
+                            <li>手厚いサポート体制</li>
+                        </ul>
+                    </div>
+                    <div class="trouble-solution-section__image">
+                        <img src="images/trouble_man_サムネ-1.png" alt="お悩みを抱える人" class="trouble-solution-section__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             サービスセクション
+             - 提供サービスの紹介
+             - 3つの主要サービス
+             - 機能一覧
+        ========================================== -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <h2 class="section-title">サービス</h2>
+                <p class="section-description">
+                    お客様のニーズに合わせた3つの主要サービスをご提供
+                </p>
+
+                <div class="services-section__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">🌐</div>
+                        <h3 class="service-card__title">Webシステム開発</h3>
+                        <p class="service-card__description">
+                            モダンな技術スタックを使用した高性能なWebアプリケーションを開発。
+                            スケーラブルで保守性の高いシステムをお届けします。
+                        </p>
+                        <ul class="service-card__features">
+                            <li>React・Vue.js対応</li>
+                            <li>レスポンシブデザイン</li>
+                            <li>SEO最適化</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">📱</div>
+                        <h3 class="service-card__title">モバイルアプリ開発</h3>
+                        <p class="service-card__description">
+                            iOS・Android両対応のネイティブアプリから、
+                            React NativeやFlutterを使用したクロスプラットフォーム開発まで。
+                        </p>
+                        <ul class="service-card__features">
+                            <li>ネイティブアプリ開発</li>
+                            <li>クロスプラットフォーム</li>
+                            <li>UI/UX設計</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">☁️</div>
+                        <h3 class="service-card__title">クラウド・インフラ</h3>
+                        <p class="service-card__description">
+                            AWS・Azure・GCPを活用したクラウドインフラの構築・運用。
+                            セキュリティとパフォーマンスを両立させます。
+                        </p>
+                        <ul class="service-card__features">
+                            <li>マルチクラウド対応</li>
+                            <li>DevOps・CI/CD</li>
+                            <li>24時間監視体制</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             会社概要セクション
+             - 企業情報
+             - 実績数値
+             - 信頼性のアピール
+        ========================================== -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-section__content">
+                    <div class="about-section__text">
+                        <h2 class="section-title">TechSolutionsについて</h2>
+                        <p class="about-section__description">
+                            2015年の創業以来、300社以上の企業様のDXをサポートしてまいりました。<br>
+                            経験豊富なエンジニアチームが、最新技術を駆使して<br>
+                            お客様のビジネス課題を解決いたします。
+                        </p>
+
+                        <div class="about-section__stats">
+                            <div class="stats-item">
+                                <div class="stats-item__number">300+</div>
+                                <div class="stats-item__label">導入実績</div>
+                            </div>
+                            <div class="stats-item">
+                                <div class="stats-item__number">99.9%</div>
+                                <div class="stats-item__label">稼働率</div>
+                            </div>
+                            <div class="stats-item">
+                                <div class="stats-item__number">24時間</div>
+                                <div class="stats-item__label">サポート体制</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-section__image">
+                        <div class="about-section__graphic"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             導入実績セクション
+             - 客様事例
+             - 実際の成果
+             - 数値的改善効果
+        ========================================== -->
+        <section class="results-section" id="results">
+            <div class="container">
+                <h2 class="section-title">導入実績</h2>
+                <div class="results-section__grid">
+                    <div class="result-card">
+                        <h3 class="result-card__client">製造業A社様</h3>
+                        <div class="result-card__metric">
+                            <span class="result-card__metric-label">業務効率</span>
+                            <span class="result-card__metric-value">+40%向上</span>
+                        </div>
+                        <p class="result-card__description">
+                            在庫管理システムの導入により、手作業を大幅削減。<br>
+                            リアルタイムでの在庫把握が可能になりました。
+                        </p>
+                    </div>
+                    <div class="result-card">
+                        <h3 class="result-card__client">小売業B社様</h3>
+                        <div class="result-card__metric">
+                            <span class="result-card__metric-label">売上</span>
+                            <span class="result-card__metric-value">+25%増加</span>
+                        </div>
+                        <p class="result-card__description">
+                            ECサイトのリニューアルとデータ分析システムの導入で、<br>
+                            顧客体験を向上させ売上増加を実現。
+                        </p>
+                    </div>
+                    <div class="result-card">
+                        <h3 class="result-card__client">サービス業C社様</h3>
+                        <div class="result-card__metric">
+                            <span class="result-card__metric-label">コスト削減</span>
+                            <span class="result-card__metric-value">30%削減</span>
+                        </div>
+                        <p class="result-card__description">
+                            クラウド移行とワークフロー自動化により、<br>
+                            運用コストの大幅削減を達成いたしました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             お問い合わせセクション
+             - 連絡先情報
+             - お問い合わせフォーム
+             - バリデーション機能
+        ========================================== -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-description">
+                    まずはお気軽にご相談ください。専門スタッフが最適なソリューションをご提案いたします。
+                </p>
+
+                <div class="contact-section__content">
+                    <div class="contact-section__info">
+                        <div class="contact-item">
+                            <div class="contact-item__icon">📞</div>
+                            <div class="contact-item__content">
+                                <h4 class="contact-item__title">お電話でのお問い合わせ</h4>
+                                <p class="contact-item__value">03-1234-5678</p>
+                                <small class="contact-item__note">平日 9:00-18:00</small>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">✉️</div>
+                            <div class="contact-item__content">
+                                <h4 class="contact-item__title">メールでのお問い合わせ</h4>
+                                <p class="contact-item__value">contact@techsolutions.co.jp</p>
+                                <small class="contact-item__note">24時間受付</small>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-field">
+                            <label for="company" class="form-field__label">会社名 *</label>
+                            <input type="text" id="company" name="company" class="form-field__input" required>
+                            <span class="form-field__error" id="company-error"></span>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="name" class="form-field__label">お名前 *</label>
+                            <input type="text" id="name" name="name" class="form-field__input" required>
+                            <span class="form-field__error" id="name-error"></span>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email" class="form-field__label">メールアドレス *</label>
+                            <input type="email" id="email" name="email" class="form-field__input" required>
+                            <span class="form-field__error" id="email-error"></span>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="service" class="form-field__label">ご希望のサービス</label>
+                            <select id="service" name="service" class="form-field__select">
+                                <option value="">選択してください</option>
+                                <option value="web">Webシステム開発</option>
+                                <option value="mobile">モバイルアプリ開発</option>
+                                <option value="cloud">クラウド・インフラ</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="message" class="form-field__label">お問い合わせ内容 *</label>
+                            <textarea id="message" name="message" rows="5" class="form-field__textarea"
+                                required></textarea>
+                            <span class="form-field__error" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="button button--primary button--full">送信する</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         フッターセクション
+         - 企業情報
+         - サイトマップ
+         - 著作権情報
+    ========================================== -->
+    <footer class="footer-section">
+        <div class="container">
+            <!-- メインフッターコンテンツ -->
+            <div class="footer-section__content">
+                <!-- ブランド情報 -->
+                <div class="footer-section__brand">
+                    <h3 class="footer-section__brand-title">TechSolutions</h3>
+                    <p class="footer-section__brand-description">
+                        最先端のITソリューションで<br>
+                        企業のDXを支援
+                    </p>
+                </div>
+
+                <!-- リンクグループ -->
+                <div class="footer-section__links">
+                    <div class="footer-link-column">
+                        <h4 class="footer-link-column__title">サービス</h4>
+                        <a href="#services" class="footer-link-column__link">Webシステム開発</a>
+                        <a href="#services" class="footer-link-column__link">モバイルアプリ開発</a>
+                        <a href="#services" class="footer-link-column__link">クラウド・インフラ</a>
+                    </div>
+                    <div class="footer-link-column">
+                        <h4 class="footer-link-column__title">会社情報</h4>
+                        <a href="#about" class="footer-link-column__link">会社概要</a>
+                        <a href="#results" class="footer-link-column__link">導入実績</a>
+                        <a href="#contact" class="footer-link-column__link">お問い合わせ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- コピーライト -->
+            <div class="footer-section__bottom">
+                <p class="footer-section__copyright">&copy; 2024 TechSolutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 構造化データ（SEO対策） -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "TechSolutions",
+        "description": "最先端のITソリューションで企業のDXを支援",
+        "url": "https://example.com",
+        "logo": "https://example.com/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+81-3-1234-5678",
+            "contactType": "customer service",
+            "areaServed": "JP",
+            "availableLanguage": "Japanese"
+        },
+        "sameAs": []
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
